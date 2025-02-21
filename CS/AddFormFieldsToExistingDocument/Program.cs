@@ -6,7 +6,7 @@ namespace AddFormFieldsToExistingDocument {
             using (PdfDocumentProcessor processor = new PdfDocumentProcessor()) {
 
                 // Load a document.
-                processor.LoadDocument("..\\..\\Document.pdf");
+                processor.LoadDocument("..\\..\\..\\Document.pdf");
 
                 // Create a text box field specifying the field name, page number, and field location on the page.
                 PdfAcroFormTextBoxField textBox = new PdfAcroFormTextBoxField("text box", 1, new PdfRectangle(230, 690, 280, 710));
@@ -33,7 +33,7 @@ namespace AddFormFieldsToExistingDocument {
                 processor.AddFormFields(textBox, radioGroup);
 
                 // Save the result document.
-                processor.SaveDocument("..\\..\\Result.pdf");
+                processor.SaveDocument("..\\..\\..\\Result.pdf");
             }
         }
     }

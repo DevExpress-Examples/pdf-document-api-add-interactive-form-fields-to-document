@@ -7,7 +7,7 @@ Namespace AddFormFieldsToExistingDocument
         Shared Sub Main(ByVal args As String())
             Using processor As PdfDocumentProcessor = New PdfDocumentProcessor()
                 ' Load a document.
-                processor.LoadDocument("..\..\Document.pdf")
+                processor.LoadDocument("..\..\..\Document.pdf")
                 ' Create a text box field specifying the field name, page number, and field location on the page.
                 Dim textBox As PdfAcroFormTextBoxField = New PdfAcroFormTextBoxField("text box", 1, New PdfRectangle(230, 690, 280, 710))
                 ' Specify text box text, and appearance.
@@ -26,7 +26,7 @@ Namespace AddFormFieldsToExistingDocument
                 ' Add form fields to the page.
                 processor.AddFormFields(textBox, radioGroup)
                 ' Save the result document.
-                processor.SaveDocument("..\..\Result.pdf")
+                processor.SaveDocument("..\..\..\Result.pdf")
             End Using
         End Sub
     End Class

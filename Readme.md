@@ -6,7 +6,10 @@
 <!-- default badges end -->
 # PDF Document API - Add Interactive Form Fields to a Document
 
-This example shows how to create interactive form fields (e.g.,  text box and radio button group fields) and add them to an existing PDF document.
+This example shows how to create interactive form fields (for example,  text box and radio button group fields) and add them to an existing PDF document.
+
+>[!IMPORTANT]
+> You need a license for the **DevExpress Office File API Subscription** or **DevExpress Universal Subscription** to use the libraries listed below in production code.
 
 # Files to Review
 
